@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Book list</title>
+    <style>
+        .mysuccess, .myerror{
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .myerror{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Add Book</h1>
+        
+        <form id="book-form">
+            <div class="form-group form-inline">
+                <label class="mx-2" for="title">Title:</label>
+                <input type="text" class="form-control flex-fill" id="title"/>
+            </div>
+
+            <div class="form-group form-inline">
+                <label class="mx-2" for="author">Author:</label>
+                <input type="text" class="form-control flex-fill" id="author"/>
+            </div>
+
+            <div class="form-group form-inline">
+                <label class="mx-2" for="isbn">ISBN#:</label>
+                <input type="text" class="form-control flex-fill" id="isbn"/>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit" class="w-100">
+            </div>
+    </form>
+
+        <hr>
+
+        <table class="w-100">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+            
+        </table>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
